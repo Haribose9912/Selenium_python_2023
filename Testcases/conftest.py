@@ -15,7 +15,7 @@ from selenium.webdriver.chrome.options import Options
 def setup(request, browser):
     opt = Options()
     opt.add_argument('--headless')
-# def setup():
+    # def setup():
     if browser == 'chrome':
         driver = webdriver.Chrome(ChromeDriverManager().install())
         print("Launching Chrome browser")
@@ -44,8 +44,9 @@ def setup(request, browser):
 def pytest_addoption(parser):  # this will get the value from CLI/hooks
     parser.addoption("--browser")
 
+
 @pytest.fixture(scope="class", autouse=True)
-def browser(request):  #this will return the browser value to setup method
+def browser(request):  # this will return the browser value to setup method
     return request.config.getoption("--browser")
 
 ##################### pytest HTML reports ####################

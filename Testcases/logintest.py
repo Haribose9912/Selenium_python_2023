@@ -1,5 +1,8 @@
 import time
+
+import allure
 import pytest
+from allure_commons.types import AttachmentType
 from selenium.common.exceptions import InvalidElementStateException
 from Pageobjects.loginpage import Loginpage
 from Utilities.Readproperties import readconfig
@@ -7,6 +10,7 @@ from Utilities.customLogger import loggen
 from selenium import webdriver
 
 
+@allure.severity(allure.severity_level.NORMAL)
 @pytest.mark.usefixtures("setup")  # using pytest fixture to setup driver instances
 class Test_001_Login:
     baseURL = readconfig.getApplicationURL()
@@ -22,13 +26,14 @@ class Test_001_Login:
     def class_setup(self):
         self.lp = Loginpage(self.driver)  # This is to create one variable and use it widely for login page
 
+    @allure.severity(allure.severity_level.MINOR)
     def test_homePage_title(self):
         self.logger.info('****TestLogin****')
         self.logger.info('****Verifying home page title****')
         # self.driver = setup
         self.driver.get(self.baseURL)  # here we don't have loop hence we can use url from read-properties module
         act_title = self.driver.title
-        if act_title == "IndiaMART - Indian Manufacturers Suppliers Exporters Directory,India Exporter Manufacturer":
+        if act_title == "IndiaMART - Indian Manufacturers Suppliers Exporters Directory,India Exporter Manufacturers":
             assert True
             self.driver.close()
             print("Title is validated")
@@ -37,11 +42,13 @@ class Test_001_Login:
             t = self.driver.title
             print("Title is Incorrect")
             print("This is the Page title: ", t)
+            allure.attach(self.driver.get_screenshot_as_png(), name="Homepagetitle", attachment_type=AttachmentType.PNG)
             self.driver.save_screenshot(".\\Screenshots\\" + "test_homePage_title.png")
             self.driver.close()
             self.logger.error('****Home page title failed****')
             assert False
 
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_loginpage(self):
         self.logger.info('****Verifying login test****')
         self.driver.get(self.baseURL)
