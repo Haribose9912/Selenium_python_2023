@@ -1,0 +1,5 @@
+[32mINFO    [0m WDM:logger.py:11 ====== WebDriver manager ======
+[32mINFO    [0m WDM:logger.py:11 Driver [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.90\chromedriver.exe] found in cache
+[32mINFO    [0m root:logintest.py:32 ****TestLogin****
+[32mINFO    [0m root:logintest.py:33 ****Verifying home page title****
+[1m[31mERROR   [0m root:logintest.py:49 ****Home page title failed****

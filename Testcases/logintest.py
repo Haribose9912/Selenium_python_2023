@@ -1,12 +1,13 @@
 import time
-
+# import logging
 import allure
+# import fileHandler as fileHandler
 import pytest
 from allure_commons.types import AttachmentType
 from selenium.common.exceptions import InvalidElementStateException
 from Pageobjects.loginpage import Loginpage
 from Utilities.Readproperties import readconfig
-from Utilities.customLogger import loggen
+from Utilities.customLogger import configure_logger
 from selenium import webdriver
 
 
@@ -20,7 +21,7 @@ class Test_001_Login:
     # baseURL="https://my.indiamart.com/"
     # mobilenumber="8333956091"
     # password="Hari@9911"
-    logger = loggen()
+    logger = configure_logger()
 
     @pytest.fixture(autouse=True)  # This fixture will act as support to setup driver
     def class_setup(self):
