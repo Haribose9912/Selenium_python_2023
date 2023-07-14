@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from Pageobjects.login_page_data_driven import home_page, login_page_ddt
 # from Pageobjects.loginpage import Loginpage
 from Utilities.Readproperties import readconfig
-from Utilities.customLogger import loggen
+from Utilities.customLogger import configure_logger
 from selenium import webdriver
 from Utilities import excelUtils
 
@@ -16,7 +16,7 @@ from Utilities import excelUtils
 class Test_002_Login:
     # baseURL = readconfig.getApplicationURL()
     path = ".//TestData/Logindata.xlsx"
-    logger = loggen()
+    logger = configure_logger()
 
     @pytest.fixture(autouse=True)  # This fixture will act as support to setup driver
     def class_setup(self):

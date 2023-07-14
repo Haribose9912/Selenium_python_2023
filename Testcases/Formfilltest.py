@@ -1,7 +1,7 @@
 import time
 import pytest
 from selenium import webdriver
-from Utilities.customLogger import LogGen
+from Utilities.customLogger import configure_logger
 from Pageobjects.Formfillpage import Formfill
 # from ddt import ddt, data, file_data, unpack
 from Utilities.base_driver import basedriver
@@ -9,7 +9,7 @@ from Utilities.base_driver import basedriver
 
 @pytest.mark.usefixtures("setup")
 class Test_form_001:
-    logger = LogGen.loggen()
+    logger = configure_logger()
 
     @pytest.fixture(autouse=True)
     def class_setup(self):
