@@ -57,3 +57,11 @@
 2023-07-14 15:32:11,956 :INFO : WDM :====== WebDriver manager ======
 2023-07-14 15:32:12,508 :INFO : WDM :Driver [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.90\chromedriver.exe] found in cache
 2023-07-14 15:32:13,644 :INFO : root :****Verifying login test****
+2023-07-14 15:36:02,408 :INFO : WDM :====== WebDriver manager ======
+2023-07-14 15:36:02,989 :INFO : WDM :Driver [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.90\chromedriver.exe] found in cache
+2023-07-14 15:36:04,259 :INFO : root :****TestLogin****
+2023-07-14 15:36:04,259 :INFO : root :****Verifying home page title****
+2023-07-14 15:36:05,536 :ERROR : root :****Home page title failed****
+2023-07-14 15:36:07,695 :INFO : WDM :====== WebDriver manager ======
+2023-07-14 15:36:08,203 :INFO : WDM :Driver [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.90\chromedriver.exe] found in cache
+2023-07-14 15:36:09,524 :INFO : root :****Verifying login test****
