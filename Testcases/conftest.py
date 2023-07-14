@@ -7,12 +7,14 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 # from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.chrome.options import Options
+
 
 @pytest.fixture(autouse=True)
 # @pytest.fixture()
 def setup(request, browser):
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument('--headless')
+    opt = Options()
+    opt.add_argument('--headless')
 # def setup():
     if browser == 'chrome':
         driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -24,7 +26,7 @@ def setup(request, browser):
         driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
         print("Launching Firefox browser")
     elif browser == 'headless':
-        driver = webdriver.Chrome(options=chrome_options)
+        driver = webdriver.Chrome(ChromeDriverManager().install(), options=opt)
         print("Launching Headless browser")
     else:
         driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))

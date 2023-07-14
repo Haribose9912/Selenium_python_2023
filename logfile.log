@@ -1,0 +1,8 @@
+2023-07-11 22:49:50,561 :INFO : Utilities.logger :An information statement is executed
+2023-07-11 22:49:50,561 :WARNING : Utilities.logger :A warning message is executed
+2023-07-11 22:49:50,561 :ERROR : Utilities.logger :An error message is executed
+2023-07-11 22:49:50,561 :CRITICAL : Utilities.logger :A critical message is executed
+2023-07-11 22:52:47,486 :INFO : Utilities.logger :An information statement is executed
+2023-07-11 22:52:47,486 :WARNING : Utilities.logger :A warning message is executed
+2023-07-11 22:52:47,486 :ERROR : Utilities.logger :An error message is executed
+2023-07-11 22:52:47,486 :CRITICAL : Utilities.logger :A critical message is executed
