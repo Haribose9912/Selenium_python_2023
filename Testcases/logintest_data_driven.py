@@ -4,14 +4,14 @@ from selenium.webdriver.common.by import By
 from Pageobjects.login_page_data_driven import login_page_ddt
 from Pageobjects.login_page_data_driven import home_page
 # from Utilities.Readproperties import readconfig
-from Utilities.customLogger import LogGen
+from Utilities.customLogger import configure_logger
 from Utilities import jsonUtils
 
 
 # *********  Data driven testing using Json file *************#
 @pytest.mark.usefixtures("setup")
 class Test_Login_data_driven_001():
-    logger = LogGen.loggen()
+    logger = configure_logger()
 
     @pytest.fixture(autouse=True)
     def class_setup(self):

@@ -4,12 +4,12 @@ from requests.exceptions import InvalidSchema, MissingSchema
 from selenium.webdriver.common.by import By
 from Pageobjects import login_page_data_driven
 from Pageobjects.login_page_data_driven import login_page_ddt, home_page
-from Utilities.customLogger import loggen
+from Utilities.customLogger import configure_logger
 
 
 @pytest.mark.usefixtures("setup")
 class Test_Brokenlinks():
-    logger = loggen()
+    logger = configure_logger()
 
     @pytest.fixture(autouse=True)
     def class_setup(self):

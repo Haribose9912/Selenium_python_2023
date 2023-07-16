@@ -25,3 +25,7 @@ class readconfig:
     def getlogindemo_url():
         url2 = config.get('common login credentials', 'Login_demo_Url')
         return url2
+
+    @staticmethod
+    def getToolsqa_Url():
+        url = config.get('common login credentials', 'ToolsqaUrl')

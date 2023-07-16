@@ -17,6 +17,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from Utilities.Readproperties import readconfig
+from Utilities.customLogger import configure_logger
 
 
 @pytest.mark.usefixtures("setup")  # using pytest fixture to setup driver instances
@@ -28,6 +29,7 @@ class Test001_Mainpage:
     city = "jaipur"
     # itemname = input("Enter Product: ")
     itemname = "Jeera"
+    logger = configure_logger()
 
     @pytest.fixture(autouse=True)  # This fixture will act as support to setup driver
     def class_setup(self):
