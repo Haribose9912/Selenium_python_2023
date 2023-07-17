@@ -19,6 +19,13 @@ class basedriver:
         element = wait.until(EC.visibility_of_element_located((locator_type, locator)))
         return element
 
+    ########## webdriver wait for list of elements###########
+
+    def wait_until_all_elements_located(self, locator_type, locator):
+        wait = WebDriverWait(self.driver, 20)
+        element = wait.until(EC.presence_of_all_elements_located((locator_type, locator)))
+        return element
+
     ###################### screenshot setup ########################
 
     def screenshot(self):

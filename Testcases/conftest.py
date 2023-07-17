@@ -17,7 +17,7 @@ def setup(request, browser):
     opt.add_argument('--headless')
     # def setup():
     if browser == 'chrome':
-        driver = webdriver.Chrome(ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
         print("Launching Chrome browser")
     elif browser == 'edge':
         driver = webdriver.Edge(EdgeChromiumDriverManager().install())

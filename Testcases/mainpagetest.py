@@ -75,6 +75,8 @@ class Test001_Mainpage:
         except NoSuchElementException:
             print("NoSuchElementException occurred..")
 
+        # clicking on show more results
+
         try:
             showresults_wait = WebDriverWait(self.driver, 30).until(
                 EC.element_to_be_clickable(
@@ -111,8 +113,6 @@ class Test001_Mainpage:
             except UnboundLocalError:
                 print("UnboundLocalError occurred..")
 
-        # self.driver.execute_script("window.scrollBy(0,document.body.scrollHeight)")
-        # time.sleep(2)
         self.driver.execute_script("window.scrollBy(0,document.body.scrollHeight)")
         self.driver.execute_script("window.scrollBy(0,document.body.scrollHeight)")
 
