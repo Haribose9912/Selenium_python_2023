@@ -41,7 +41,7 @@ def setup(request, browser):
     # return driver
 
 
-def pytest_addoption(parser):  # this will get the value from CLI/hooks
+def pytest_addoption(parser):  # this will get the val ue from CLI/hooks
     parser.addoption("--browser")
 
 

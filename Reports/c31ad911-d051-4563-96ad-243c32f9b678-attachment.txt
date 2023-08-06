@@ -1,0 +1,12 @@
+[32mINFO    [0m WDM:logger.py:11 ====== WebDriver manager ======
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+[32mINFO    [0m WDM:logger.py:11 About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_win32.zip
+[32mINFO    [0m WDM:logger.py:11 Driver has been saved in cache [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.90]
+[32mINFO    [0m root:zomatotest.py:31 ****Initializing zomato_main page****
+[32mINFO    [0m root:zomatotest.py:38 ********Opening Zomato URL*****
+[32mINFO    [0m root:zomatotest.py:40 ********Verifying page title*****
+[32mINFO    [0m root:zomatotest.py:43 ********Page title is success*****
+[32mINFO    [0m root:zomatotest.py:53 ****Getting all the mobile numbers from the businesses started****
+[32mINFO    [0m root:zomatotest.py:54 ****filter has been selected****
+[32mINFO    [0m root:zomatotest.py:58 ****Initializing zomato_product_page****
+[32mINFO    [0m root:zomatotest.py:149 ****closing the browser****

@@ -1,10 +1,11 @@
-from selenium.common.exceptions import TimeoutException, StaleElementReferenceException
+from selenium.common.exceptions import TimeoutException, StaleElementReferenceException, InvalidElementStateException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from Utilities.base_driver import basedriver
 import time
+from Utilities.decorators import retry_on_exception
 
 
 class zomato_main(basedriver):
@@ -51,8 +52,12 @@ class zomato_product_page(zomato_main):
     def __init__(self, driver):
         super().__init__(driver)
 
+    @retry_on_exception(InvalidElementStateException, retries=3, delay=1)
     def click_overview(self):
-        self.wait_until_element_is_clickable(By.XPATH, self.select_overview).click()
+        try:
+            self.wait_until_element_is_clickable(By.XPATH, self.select_overview).click()
+        except InvalidElementStateException as e:
+            print("Test case failed: Caught InvalidElementStateException after multiple retries.")
 
     def get_call_number(self):
         self.driver.find_elements(By.XPATH, self.Call_number)

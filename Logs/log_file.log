@@ -1,0 +1,42 @@
+2023-07-23 18:02:30,943 :INFO : WDM :====== WebDriver manager ======
+2023-07-23 18:02:31,291 :INFO : WDM :Get LATEST chromedriver version for google-chrome
+2023-07-23 18:02:31,736 :INFO : WDM :About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_win32.zip
+2023-07-23 18:02:32,780 :INFO : WDM :Driver has been saved in cache [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.90]
+2023-07-23 18:02:34,182 :INFO : root :****Initializing zomato_main page****
+2023-07-23 18:02:34,183 :INFO : root :********Opening Zomato URL*****
+2023-07-23 18:02:37,403 :INFO : root :********Verifying page title*****
+2023-07-23 18:02:37,417 :INFO : root :********Page title is success*****
+2023-07-23 18:02:37,417 :INFO : root :****Getting all the mobile numbers from the businesses started****
+2023-07-23 18:02:37,417 :INFO : root :****filter has been selected****
+2023-07-23 18:02:37,556 :INFO : root :****Initializing zomato_product_page****
+2023-07-23 18:02:48,641 :INFO : root :****closing the browser****
+2023-07-23 18:03:17,765 :INFO : WDM :====== WebDriver manager ======
+2023-07-23 18:03:18,144 :INFO : WDM :Driver [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.90\chromedriver.exe] found in cache
+2023-07-23 18:03:19,853 :INFO : root :****Initializing zomato_main page****
+2023-07-23 18:03:19,853 :INFO : root :********Opening Zomato URL*****
+2023-07-23 18:03:22,900 :INFO : root :********Verifying page title*****
+2023-07-23 18:03:22,959 :INFO : root :********Page title is success*****
+2023-07-23 18:03:22,959 :INFO : root :****Getting all the mobile numbers from the businesses started****
+2023-07-23 18:03:22,959 :INFO : root :****filter has been selected****
+2023-07-23 18:03:23,154 :INFO : root :****Initializing zomato_product_page****
+2023-07-23 18:03:34,220 :INFO : root :****closing the browser****
+2023-07-23 18:07:03,861 :INFO : WDM :====== WebDriver manager ======
+2023-07-23 18:07:04,203 :INFO : WDM :Driver [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.90\chromedriver.exe] found in cache
+2023-07-23 18:07:05,456 :INFO : root :****Initializing zomato_main page****
+2023-07-23 18:07:05,458 :INFO : root :********Opening Zomato URL*****
+2023-07-23 18:07:08,621 :INFO : root :********Verifying page title*****
+2023-07-23 18:07:08,629 :INFO : root :********Page title is success*****
+2023-07-23 18:07:08,629 :INFO : root :****Getting all the mobile numbers from the businesses started****
+2023-07-23 18:07:08,629 :INFO : root :****filter has been selected****
+2023-07-23 18:07:08,791 :INFO : root :****Initializing zomato_product_page****
+2023-07-23 18:07:19,908 :INFO : root :****closing the browser****
+2023-07-23 18:08:30,299 :INFO : WDM :====== WebDriver manager ======
+2023-07-23 18:08:30,631 :INFO : WDM :Driver [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.90\chromedriver.exe] found in cache
+2023-07-23 18:08:31,908 :INFO : root :****Initializing zomato_main page****
+2023-07-23 18:08:31,909 :INFO : root :********Opening Zomato URL*****
+2023-07-23 18:08:35,653 :INFO : root :********Verifying page title*****
+2023-07-23 18:08:35,854 :INFO : root :********Page title is success*****
+2023-07-23 18:08:35,856 :INFO : root :****Getting all the mobile numbers from the businesses started****
+2023-07-23 18:08:35,858 :INFO : root :****filter has been selected****
+2023-07-23 18:08:36,023 :INFO : root :****Initializing zomato_product_page****
+2023-07-23 18:08:47,110 :INFO : root :****closing the browser****

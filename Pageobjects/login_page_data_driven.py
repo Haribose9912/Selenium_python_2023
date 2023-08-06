@@ -50,7 +50,8 @@ class login_page_ddt(basedriver):
         # ele1.text
 
 
-class home_page(basedriver): # basedriver is called to get functions from basedriver.py which have webdriver wait custom methods
+class home_page(basedriver): # basedriver is called to get functions from basedriver.py which have webdriver wait
+    # custom methods
     # home page locators
     loginSuccess = "//*[text()='Logged In Successfully']"
     logout = "//*[text()='Log out']"

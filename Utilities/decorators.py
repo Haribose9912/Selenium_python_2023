@@ -1,3 +1,37 @@
+# Yes, you can use a decorator in Python to implement retrying mechanisms for functions, including Selenium actions
+# that may raise exceptions like InvalidElementStateException. Using a decorator can make your code cleaner and more
+# modular, as it separates the retry logic from the main test case.
+#
+# Here's an example of how you can create a retry decorator to handle the InvalidElementStateException for Selenium
+# actions:
+#
+# python
+# Copy code
+import time
+
+
+# from selenium import webdriver
+# from selenium.common.exceptions import InvalidElementStateException
+#
+# # Initialize the WebDriver instance
+# driver = webdriver.Chrome()
+
+# Decorator function for retrying the function multiple times
+def retry_on_exception(exception_type, retries=3, delay=1):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            for _ in range(retries + 1):
+                try:
+                    return func(*args, **kwargs)
+                except exception_type as e:
+                    print(f"Caught {exception_type.__name__}. Retrying...")
+                    time.sleep(delay)
+            raise exception_type(f"{exception_type.__name__} occurred {retries} times. Giving up.")
+
+        return wrapper
+
+    return decorator
+
 # def retry_stale_element(func):
 #     def wrapper(*args, **kwargs):
 #         max_retries = 3
