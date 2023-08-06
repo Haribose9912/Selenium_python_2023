@@ -13,14 +13,19 @@ from selenium.webdriver.chrome.options import Options
 @pytest.fixture(autouse=True)
 # @pytest.fixture()
 def setup(request, browser):
+    ssl_cert = Options()
+    # ssl_cert.use_chromium = True
+    ssl_cert.add_argument('--ignore-certificate-errors')
+
     opt = Options()
     opt.add_argument('--headless')
+    opt.add_argument('--ignore-certificate-errors')
     # def setup():
     if browser == 'chrome':
-        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=ssl_cert)
         print("Launching Chrome browser")
     elif browser == 'edge':
-        driver = webdriver.Edge(EdgeChromiumDriverManager().install())
+        driver = webdriver.Edge(EdgeChromiumDriverManager().install(), options=ssl_cert)
         print("Launching Edge browser")
     elif browser == 'firefox':
         driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
@@ -29,7 +34,7 @@ def setup(request, browser):
         driver = webdriver.Chrome(ChromeDriverManager().install(), options=opt)
         print("Launching Headless browser")
     else:
-        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+        driver = webdriver.Chrome(ChromeDriverManager(version="114.0.5735.16").install(), options=ssl_cert)
         print("Launching Default browser")
     driver.maximize_window()
     driver.implicitly_wait(5)

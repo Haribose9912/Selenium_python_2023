@@ -1,0 +1,55 @@
+👩‍💻 Exact Code Snippet  - -for headless browser- - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+
+
+/////######## These are the all chrome options used for multiple purposes ##########/////////
+
+options = webdriver.ChromeOptions()
+options.headless = True
+options.add_argument(f'user-agent={user_agent}')
+options.add_argument("--window-size=1920,1080")
+options.add_argument('--ignore-certificate-errors')
+options.add_argument('--allow-running-insecure-content')
+options.add_argument("--disable-extensions")
+options.add_argument("--proxy-server='direct://'")
+options.add_argument("--proxy-bypass-list=*")
+options.add_argument("--start-maximized")
+options.add_argument('--disable-gpu')
+options.add_argument('--disable-dev-shm-usage')
+options.add_argument('--no-sandbox')
+driver = webdriver.Chrome(executable_path="chromedriver.exe", options=options)
+
+
+
+Complete info of different arguments ::
+
+--headless: Run Chrome in headless mode (without a GUI).
+Headless mode is popular for running tests in a headless environment to improve test execution speed and resource efficiency.
+
+--start-maximized: Start the Chrome browser in maximized window mode.
+ This is used to ensure that the browser window is maximized for consistent testing across different environments.
+
+--disable-gpu: Disable GPU hardware acceleration.
+Some tests may encounter issues with GPU acceleration, so this option helps to avoid such problems.
+
+--ignore-certificate-errors: Ignore SSL certificate errors and continue loading the page.
+As mentioned earlier, this option is used to handle sites with SSL certificate issues during testing.
+
+--disable-infobars: Disable the "Chrome is being controlled by automated test software" infobar.
+This option is useful to hide distracting notifications that may interfere with automated tests.
+
+--disable-extensions: Disable Chrome extensions.
+Extensions can interfere with tests, so this option helps to avoid unexpected behavior.
+
+--disable-notifications: Disable browser notifications.
+This is used to prevent pop-up notifications from interrupting the automated tests.
+
+--disable-popup-blocking: Disable popup blocking.
+Some websites use popups for important functionalities, and this option ensures that popups are not blocked during testing.
+
+--no-sandbox: Disable the sandbox for running Chrome in a more permissive mode.
+This option is sometimes necessary when running Chrome in certain environments.
+
+--window-size: Set the initial window size.
+Testers use this option to control the browser window size for consistent rendering across different machines.
