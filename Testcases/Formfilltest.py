@@ -16,11 +16,12 @@ class Test_form_001:
         self.ff = Formfill(self.driver)
         self.ff.Form_url()
 
+    # @pytest.mark.flaky(reruns=2, reruns_delay=2)
     def test_page_title(self):
         self.logger.info('****Verifying home page title****')
 
         act_title = self.driver.title
-        exp_title = act_title
+        exp_title = "test pass"
         if act_title == exp_title:
             print("Page title is matching")
             self.logger.info('****Home page titile passed****')

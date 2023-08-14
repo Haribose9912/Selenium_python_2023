@@ -228,3 +228,21 @@
 2023-08-13 13:12:19,170 :INFO : WDM :Driver [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.16\chromedriver.exe] found in cache
 2023-08-13 13:12:31,189 :INFO : WDM :====== WebDriver manager ======
 2023-08-13 13:12:33,375 :INFO : WDM :Driver [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.16\chromedriver.exe] found in cache
+2023-08-14 23:18:33,661 :INFO : WDM :====== WebDriver manager ======
+2023-08-14 23:18:34,025 :INFO : WDM :There is no [win32] chromedriver "latest" for browser google-chrome "115.0.5790" in cache
+2023-08-14 23:18:34,025 :INFO : WDM :Get LATEST chromedriver version for google-chrome
+2023-08-14 23:18:36,850 :INFO : WDM :====== WebDriver manager ======
+2023-08-14 23:18:37,330 :INFO : WDM :There is no [win32] chromedriver "latest" for browser google-chrome "115.0.5790" in cache
+2023-08-14 23:18:37,330 :INFO : WDM :Get LATEST chromedriver version for google-chrome
+2023-08-14 23:18:39,743 :INFO : WDM :====== WebDriver manager ======
+2023-08-14 23:18:40,096 :INFO : WDM :There is no [win32] chromedriver "latest" for browser google-chrome "115.0.5790" in cache
+2023-08-14 23:18:40,096 :INFO : WDM :Get LATEST chromedriver version for google-chrome
+2023-08-14 23:18:59,415 :INFO : WDM :====== WebDriver manager ======
+2023-08-14 23:18:59,752 :INFO : WDM :Driver [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.16\chromedriver.exe] found in cache
+2023-08-14 23:19:04,655 :INFO : root :****Verifying home page title****
+2023-08-14 23:19:08,842 :INFO : WDM :====== WebDriver manager ======
+2023-08-14 23:19:09,375 :INFO : WDM :Driver [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.16\chromedriver.exe] found in cache
+2023-08-14 23:19:11,456 :INFO : root :****Verifying home page title****
+2023-08-14 23:19:15,550 :INFO : WDM :====== WebDriver manager ======
+2023-08-14 23:19:16,084 :INFO : WDM :Driver [C:\Users\Harish kumar\.wdm\drivers\chromedriver\win32\114.0.5735.16\chromedriver.exe] found in cache
+2023-08-14 23:19:18,587 :INFO : root :****Verifying home page title****
